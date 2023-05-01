@@ -132,6 +132,11 @@ img {
 }
 
 /* ----------- header ------------ */
+.header {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
 .header-box {
   padding: 0 15px;
 }
@@ -217,11 +222,15 @@ img {
   padding: 188px 0;
 
   background-image: linear-gradient(
-      to right,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office.jpg);
+
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-box {
   text-align: center;
@@ -385,6 +394,8 @@ img {
 .footer-container {
   display: flex;
   gap: 120px;
+
+  align-items: baseline;
 }
 .logo-footer {
   color: var(--footer-text-colour);
@@ -413,8 +424,18 @@ img {
 .footer .instagram-link:hover,
 .footer .twitter-link:hover,
 .footer .facebook-link:hover,
-.footer .linkedin-link:hover {
+.footer .linkedin-link:hover,
+.footer .instagram-link:focus,
+.footer .twitter-link:focus,
+.footer .facebook-link:focus,
+.footer .linkedin-link:focus {
   background-color: var(--icon-footer-accent);
+}
+
+.footer .social-icon {
+  height: 24px;
+  width: 24px;
+  fill: var(--section-background-colour);
 }
 
 /* =========== PORTFOLIO ============= */
@@ -453,8 +474,10 @@ img {
   margin-bottom: 72px;
 }
 
-.filter-item:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+.filter-item:hover,
+.filter-item:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
