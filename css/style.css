@@ -59,7 +59,7 @@ img {
 .costumer-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
@@ -114,7 +114,10 @@ img {
 .social-list {
   display: flex;
   gap: 24px;
+
+  justify-content: center;
 }
+
 .social-link {
   display: flex;
   background-color: var(--button-colour);
@@ -126,8 +129,6 @@ img {
 }
 
 .social-icon {
-  width: 16px;
-  height: 16px;
   fill: var(--primary-background-colour);
 }
 
@@ -303,6 +304,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  border-radius: 4px;
+  margin-bottom: 8px;
 }
 
 .pic {
@@ -350,7 +354,11 @@ img {
 .worker .instagram-link:hover,
 .worker .twitter-link:hover,
 .worker .facebook-link:hover,
-.worker .linkedin-link:hover {
+.worker .linkedin-link:hover,
+.worker .instagram-link:focus,
+.worker .twitter-link:focus,
+.worker .facebook-link:focus,
+.worker .linkedin-link:focus {
   background-color: var(--accent-colour);
 }
 
@@ -375,8 +383,6 @@ img {
   border: 1px solid var(--accent-colour);
 }
 .costum-pic {
-  width: 104px;
-  height: 56px;
   fill: var(--icon-colour);
 }
 .costum-link:hover .costum-pic,
