@@ -375,8 +375,8 @@ img {
 }
 .costum-link:hover,
 .costum-link:focus {
-  border: 1px solid var(--accent-colour);
   fill: var(--accent-colour);
+  color: var(--accent-colour);
 }
 
 .costum-pic {
@@ -386,7 +386,6 @@ img {
 .costum-link:hover .costum-pic,
 .costum-link:focus .costum-pic {
   fill: var(--accent-colour);
-  color: var(--accent-colour);
 }
 
 /* --------- footer --------- */
