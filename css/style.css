@@ -128,8 +128,8 @@ img {
   justify-content: center;
 }
 
-.social-icon {
-  fill: var(--primary-background-colour);
+.team .social-icon {
+  fill: var(--section-background-colour);
 }
 
 /* ----------- header ------------ */
@@ -338,7 +338,7 @@ img {
 
 .worker-box {
   text-align: center;
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 .worker {
   background-color: var(--primary-background-colour);
@@ -351,18 +351,13 @@ img {
 .worker-name {
   margin-bottom: 8px;
 }
-.worker .instagram-link:hover,
-.worker .twitter-link:hover,
-.worker .facebook-link:hover,
-.worker .linkedin-link:hover,
-.worker .instagram-link:focus,
-.worker .twitter-link:focus,
-.worker .facebook-link:focus,
-.worker .linkedin-link:focus {
+.worker .social-link:hover,
+.worker .social-link:focus {
   background-color: var(--accent-colour);
 }
 
 /* -------------- costumers ---------- */
+
 .costum-list {
   display: flex;
   justify-content: center;
@@ -371,9 +366,9 @@ img {
 .costum-link {
   width: 168px;
   height: 88px;
-  border: 1px solid var(--icon-colour);
+  border: 1px solid;
   border-radius: 4px;
-
+  color: var(--icon-colour);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -381,10 +376,13 @@ img {
 .costum-link:hover,
 .costum-link:focus {
   border: 1px solid var(--accent-colour);
+  fill: var(--accent-colour);
 }
+
 .costum-pic {
-  fill: var(--icon-colour);
+  fill: currentColor;
 }
+
 .costum-link:hover .costum-pic,
 .costum-link:focus .costum-pic {
   fill: var(--accent-colour);
@@ -399,13 +397,16 @@ img {
 }
 .footer-container {
   display: flex;
-  gap: 120px;
 
   align-items: baseline;
 }
 .logo-footer {
   color: var(--footer-text-colour);
 }
+.footer-box {
+  margin-right: 120px;
+}
+
 .footer-box > .logo {
   display: inline-block;
   margin-bottom: 16px;
@@ -424,23 +425,19 @@ img {
 
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-background-colour);
 }
-.footer .instagram-link:hover,
-.footer .twitter-link:hover,
-.footer .facebook-link:hover,
-.footer .linkedin-link:hover,
-.footer .instagram-link:focus,
-.footer .twitter-link:focus,
-.footer .facebook-link:focus,
-.footer .linkedin-link:focus {
+.footer .social-link:hover,
+.footer .social-link:focus {
   background-color: var(--icon-footer-accent);
+}
+.footer .social-list {
+  gap: 16px;
 }
 
 .footer .social-icon {
-  height: 24px;
-  width: 24px;
   fill: var(--section-background-colour);
 }
 
@@ -469,6 +466,9 @@ img {
   color: var(--white-text-colour);
   background-color: var(--accent-colour);
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 .filter-button {
   padding: 12px 24px;
@@ -480,13 +480,6 @@ img {
   margin-bottom: 72px;
 }
 
-.filter-item:hover,
-.filter-item:focus {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-}
-
 /* ----------- application ------------ */
 
 .category-working {
@@ -494,10 +487,11 @@ img {
 }
 
 .card-box {
+  display: block;
   flex-basis: calc(100% / 3);
 }
-.app-cards:hover,
-.app-cards:focus {
+.card-box:hover,
+.card-box:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
