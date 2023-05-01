@@ -386,6 +386,7 @@ img {
 .costum-link:hover .costum-pic,
 .costum-link:focus .costum-pic {
   fill: var(--accent-colour);
+  color: var(--accent-colour);
 }
 
 /* --------- footer --------- */
